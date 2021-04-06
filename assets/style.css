@@ -1,0 +1,163 @@
+body {
+    margin:0;
+    
+}
+
+.custom-container {
+background-color:skyblue;
+text-align:center;
+justify-content:center;
+margin-bottom:50px;
+}
+
+
+h1 {
+font-family: Quicksand;
+font-size: 60px;
+color:white;
+letter-spacing: 1px;
+text-transform: uppercase;
+
+}
+
+h2 {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight:600;
+    font-style:italic;
+    color:skyblue;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+}
+
+h3 {
+    font-size:25;
+    font-family: Quicksand;
+    color:darkgray;
+    
+    
+
+}
+
+.custom-button {
+  background-color:skyblue;
+  border:0px;
+  display:block;
+  font-family: Quicksand;
+  font-weight:600;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-left:5px;
+}
+
+.custom-button:hover {
+    background-color:gray;
+    border:0px;
+    
+}
+
+.form-control {
+    height: 30px
+}
+
+ul {
+    margin:0px;
+}
+
+
+ul li {
+    list-style-type: none;
+    font-size:18px;
+    margin-bottom:20px;
+    padding-left:20px;
+}
+
+.history button {
+    background-color:skyblue;
+    border: 0px solid;
+    text-transform:uppercase;
+    font-family:Quicksand;
+    font-weight:600;
+    color:white;
+    padding:5px;
+    letter-spacing:2px;
+    font-size:12px;
+    margin-right:8px;
+    margin-bottom:5px;
+    border-radius:4px;
+}
+
+.history button:hover {
+    background-color:gray;
+    transition: .2s ease-in;
+}
+
+
+
+#today-title {
+    margin-top:20px;
+}
+
+img {
+    height:40px;
+    width:40px; 
+}
+
+.card img {
+    height:55px;
+    width:55px;    
+}
+
+.card {
+ background-color: skyblue;
+ margin:10px;
+ border: 0px solid;
+ padding:10px;
+ list-style-type: none;
+ color:white;
+ width:18%;
+   
+}
+
+#five-day {
+    display:flex;
+    justify-content:space-between;
+}
+
+.favorable {
+    display:inline;
+    background-color:lightgreen;
+    padding:5px;
+    border-radius: 4px;
+    margin-bottom:20px;
+    margin-left:20px;
+} 
+
+.moderate {
+    display:inline;
+    background-color: palegoldenrod;
+    padding:5px;
+    padding:5px;
+    border-radius: 4px;
+    margin-bottom:20px;
+    margin-left:20px;
+
+} 
+
+.severe {
+    display:inline;
+    background-color:tomato;
+    padding:5px;
+    padding:5px;
+    border-radius: 4px;
+    margin-bottom:20px;
+    margin-left:20px;
+} 
+section {
+    margin-bottom: 50px;
+}
+
+#today-container {
+    padding-bottom:25px;
+}
