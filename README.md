@@ -16,8 +16,8 @@ This is a weather app that displays the current weather for whatever city the us
 
 ## View Demo
 Click the link below to view the application:
-https://mascarelloa.github.io/weather-dashboard/.
 
+https://mascarelloa.github.io/weather-dashboard/.
 
 ## Visuals
 
