@@ -18,6 +18,11 @@ searchButton.addEventListener("click", getSearchValue);
 function getSearchValue () {
     var searchValue = document.querySelector("#search-value").value;
     
+    if (searchValue == "") {
+        alert("Opps! Please enter a valid city!");
+        return false;
+    }
+
     if (!cities.includes(searchValue)) {
     cities.unshift(searchValue);
     localStorage.setItem("cities", JSON.stringify(cities));
@@ -26,6 +31,8 @@ function getSearchValue () {
     getFiveDays(searchValue); 
     saveSearchValue(); 
     } 
+
+    document.querySelector("#search-value").value = "";
 
 }
 
@@ -76,7 +83,6 @@ function getWeather (searchValue) {
         uvIndex(latitude, longitude); 
 
         //This is the text to be displayed on the page. 
-        //****** NEED HELP! How do I get the icon to appear insead of the alphanumeric code?
         var title = data.name + " " + todayDate;
         var iconUrl = "http://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
         var  temp = "Temperature: " + data.main.temp + " ° F";
@@ -124,7 +130,7 @@ function getWeather (searchValue) {
 
             if (uvValue <= 2) {
                 uvItem.setAttribute("class", "favorable")
-            } else if (uvValue > 2 && uvValue > 6) {
+            } else if (uvValue > 2 && uvValue < 6) {
                 uvItem.setAttribute("class", "moderate")
             } else {
                 uvItem.setAttribute("class", "severe")
