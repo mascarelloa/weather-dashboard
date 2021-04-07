@@ -1,5 +1,5 @@
 //Global variables
-
+var apiKey = "86e45703ec3a0a615fe6ce69864deb5c";
 var searchButton = document.querySelector("#search-button");
 var todayTitle = document.querySelector("#today-title");
 var todayIcon = document.querySelector("#today-icon");
@@ -8,7 +8,7 @@ var forecast = document.querySelector("#five-day");
 var weatherContainer = document.getElementById("today-container");
 var cities = JSON.parse(localStorage.getItem("cities")) || [];
 var cityHistory = document.querySelector("#history");
-// var cityButton = 
+
 
 saveSearchValue(); 
 
@@ -147,7 +147,6 @@ function getWeather (searchValue) {
 }
 
 //This will get the weather for next 5 days.
-//****** NEED HELP! y dis no work, tho?
 function getFiveDays (searchValue) {
     var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=" + apiKey + "&units=imperial";
 
