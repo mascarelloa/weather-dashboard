@@ -9,7 +9,6 @@ var weatherContainer = document.getElementById("today-container");
 var cities = JSON.parse(localStorage.getItem("cities")) || [];
 var cityHistory = document.querySelector("#history");
 
-
 saveSearchValue(); 
 
 searchButton.addEventListener("click", getSearchValue);
