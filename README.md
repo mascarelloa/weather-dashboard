@@ -10,9 +10,7 @@ This is a weather app that displays the current weather for whatever city the us
 * JavaScript
 * HTML
 * CSS
-* Public APIs:
-  - https://api.nasa.gov/
-  - https://aztro.readthedocs.io/en/latest/
+* Open Weather API
 
 ## View Demo
 Click the link below to view the application:
